@@ -5,7 +5,7 @@ const config =
 module.exports = {
 
         context: path.resolve(__dirname, 'src'),
-        entry: './index.js',
+        entry: './index.jsx',
 
         output: {
                 path: path.resolve(__dirname, 'public'),
@@ -25,7 +25,7 @@ module.exports = {
         module: {
                 rules: [
                         {
-                                test: /\.js$/,
+                                test: /\.jsx?$/,
                                 exclude: /node_modules/,
                                 loader: 'babel-loader',
                                 options: {
